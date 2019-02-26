@@ -8,25 +8,54 @@
 </head>
 
 <body>
-  <div id="title">
-    <h1>Survey</h1>
-  </div>
-  <div id="description">
-    <p>The purpose of this survey is to complete the second assignment of <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+    <h1 id="title">Survey</h1>
+  <!-- <div id="description"> -->
+    <p id="description">The purpose of this survey is to complete the second assignment of <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
       The assignment is called <b>Responsive Web Design Projects - Build a Survey Form</b> and the purpose is to
       use all sections of the course's first section, <em>Responsive Web Design Certification (300 hours).</em>
     </p>
-  </div>
+  <!-- </div> -->
 
   <form id="survey-form">
 
-    Name: <br>
-    <input id="name"></input><br>
-    E-mail: <br>
-    <input id="email" type="email" pattern=".+@globex.com" required></input>
+    <label id="name-label">Name:</label>
+    <input id="name" placeholder="Enter your name"></input>
+    <label id="email-label">E-mail:</label>
+    <input id="email" required type="email" placeholder="Enter your Email">
+    <label id="number-label"> Number: </label>
+    <input type="number" size="16" id="number" min="1" max="9" placeholder="0 - 9" >
+    
+    <select id="dropdown">
+      <option>Barcelona</option>
+      <option>Panama City</option>
+      <option>Honolulu</option>
+      <option>Kuala Lumpur</option>
+    </select>
+    
+    <p>Pick your favorite comedian: </p>
+        <input type="radio" name="comedian" checked>
+        <label>Dave</label>
+        <input type="radio" name="comedian">
+        <label>Louie</label>
+        <input type="radio" name="comedian">
+        <label>Trevor</label>
 
+        <p>Which fruits do you want to eat this summer?</p>
+            <input type="checkbox" value="strawberries">
+            <label>Strawberries</label>
+            <input type="checkbox" value="peaches">
+            <label for="scales">Peaches</label>
+            <input type="checkbox" value="pineapple>
+            <label for="scales">Pineapple</label>
+            <input type="checkbox" value="watermelon">
+            <label for="scales">Watermelon</label>
 
-
+            <p>Please feel free to add any additional comments: </p>
+            <textarea rows="10" cols="50">
+                </textarea>
+    
+    
+    <input id="submit" type="submit">
 
 
   </form>
