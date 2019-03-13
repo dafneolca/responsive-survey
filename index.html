@@ -2,63 +2,100 @@
 <html>
 
 <head>
-  <style="">
-    </style>
-    <title>Survey</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+  <link href="./images/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Smoothie Maker</title>
+
 </head>
 
+
 <body>
-    <h1 id="title">Survey</h1>
-  <!-- <div id="description"> -->
-    <p id="description">The purpose of this survey is to complete the second assignment of <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
-      The assignment is called <b>Responsive Web Design Projects - Build a Survey Form</b> and the purpose is to
-      use all sections of the course's first section, <em>Responsive Web Design Certification (300 hours).</em>
-    </p>
-  <!-- </div> -->
 
-  <form id="survey-form">
 
-    <label id="name-label">Name:</label>
-    <input id="name" placeholder="Enter your name"></input>
-    <label id="email-label">E-mail:</label>
-    <input id="email" required type="email" placeholder="Enter your Email">
-    <label id="number-label"> Number: </label>
-    <input type="number" size="16" id="number" min="1" max="9" placeholder="0 - 9" >
-    
-    <select id="dropdown">
-      <option>Barcelona</option>
-      <option>Panama City</option>
-      <option>Honolulu</option>
-      <option>Kuala Lumpur</option>
-    </select>
-    
-    <p>Pick your favorite comedian: </p>
-        <input type="radio" name="comedian" checked>
-        <label>Dave</label>
-        <input type="radio" name="comedian">
-        <label>Louie</label>
-        <input type="radio" name="comedian">
-        <label>Trevor</label>
+  <div class="survey-body">
+    <div class="heading">
+      <h2 id="title">Smoothie Maker</h2>
+    </div>
 
-        <p>Which fruits do you want to eat this summer?</p>
-            <input type="checkbox" value="strawberries">
-            <label>Strawberries</label>
-            <input type="checkbox" value="peaches">
-            <label for="scales">Peaches</label>
-            <input type="checkbox" value="pineapple>
-            <label for="scales">Pineapple</label>
-            <input type="checkbox" value="watermelon">
-            <label for="scales">Watermelon</label>
+    <div class="form">
+      <h1 style="text-align: center">Please enter your details below</h1>
+      <form id="survey-form">
 
-            <p>Please feel free to add any additional comments: </p>
-            <textarea rows="10" cols="50">
+        <div class="form-input">
+
+
+
+          <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+          <label for="nme"><span>What's your name?</span></label>
+
+          <input type="text" name="name" class="question" id="nme" required autocomplete="off" />
+          <label for="nme"><span>What's your email?</span></label>
+
+          <input type="number" name="name" class="question" id="number" min="1" max="9" id="nme number" required
+            autocomplete="off" />
+          <label for="nme"><span>How many smoothies will you make? (0-10)</span></label>
+
+
+
+
+        </div>
+
+        <div class="dropdown-div">
+          Please select your preferred city:<br>
+          <select id="dropdown">
+            <option>Barcelona</option>
+            <option>Panama City</option>
+            <option>Honolulu</option>
+            <option>Kuala Lumpur</option>
+          </select>
+        </div>
+
+        <div class="radio-buttons">
+          <p>Pick your favorite comedian: </p>
+          <input type="radio" name="comedian" checked>
+          <label>Dave</label>
+          <input type="radio" name="comedian">
+          <label>Louie</label>
+          <input type="radio" name="comedian">
+          <label>Trevor</label>
+        </div>
+
+
+        <div class="checkbox-div">
+          <p>Which fruits do you want to eat this summer?</p>
+          <input type="checkbox" value="strawberries">
+          <label>Strawberries</label>
+          <input type="checkbox" value="peaches">
+          <label for="scales">Peaches</label>
+          <input type="checkbox" value="pineapple>
+            <label for=" scales">Pineapple</label>
+          <input type="checkbox" value="watermelon">
+          <label for="scales">Watermelon</label>
+        </div>
+
+
+        <div class="additional-comments">
+          <p>Please feel free to add any additional comments: </p>
+          <textarea rows="10" cols="50">
                 </textarea>
-    
-    
-    <input id="submit" type="submit">
+          <input id="submit" type="submit">
+        </div>
+      </form>
+    </div>
+    <footer>
+
+      <p id="description">The purpose of this survey is to complete the second assignment of <a href="https://www.freecodecamp.org/">freeCodeCamp</a>.</p>
+      <p>
+        The assignment is called <b>Responsive Web Design Projects - Build a Survey Form</b> and the purpose is to
+        use all sections of the course's first section, <em>Responsive Web Design Certification (300 hours).</em>
+      </p>
+
+    </footer>
+  </div>
 
 
-  </form>
+
 
 </body>
 
