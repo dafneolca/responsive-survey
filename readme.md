@@ -12,6 +12,10 @@ Additional technologies (just for example jQuery, React, Angular, or Vue) are no
 
 Happy coding!
 
+## Preview - incomplete
+
+<img src="./images/preview.png" width="300px" alt="preview">
+
 ## User Stories
 
 - 1: I can see a title with id="title" in H1 sized text.
@@ -20,9 +24,7 @@ Happy coding!
 
 - 3: I can see a form with id="survey-form".
 
-#### Did not pass test:
-
-**User Story #4: Inside the form element, I am required to enter my name in a field with id="name".**
+- 4: Inside the form element, I am required to enter my name in a field with id="name".\*\*
 
 - 5: Inside the form element, I am required to enter an email in a field with id="email".
 
@@ -40,9 +42,7 @@ Happy coding!
 
 - 12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
 
-#### Did not pass test:
-
-**User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.**
+- 13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
 
 - 14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
 
