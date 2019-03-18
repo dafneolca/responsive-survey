@@ -12,9 +12,11 @@ Additional technologies (just for example jQuery, React, Angular, or Vue) are no
 
 Happy coding!
 
-## Preview - incomplete
+## Preview
 
-<img src="./images/preview.png" width="300px" alt="preview">
+#### Status: Under Construction
+
+<img src="/images/Preview.png" width="600px" alt="preview">
 
 ## User Stories
 
